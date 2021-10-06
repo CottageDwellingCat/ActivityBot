@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="../../Discord.net-labs/src/Discord.Net.Commands/Discord.Net.Commands.csproj" />
+		<ProjectReference Include="../../Discord.net-labs/src/Discord.Net.Core/Discord.Net.Core.csproj" />
+		<ProjectReference Include="../../Discord.net-labs/src/Discord.Net.Providers.WS4Net/Discord.Net.Providers.WS4Net.csproj" />
+		<ProjectReference Include="../../Discord.net-labs/src/Discord.Net.Rest/Discord.Net.Rest.csproj" />
+		<ProjectReference Include="../../Discord.net-labs/src/Discord.Net.WebSocket/Discord.Net.WebSocket.csproj" />
+		<ProjectReference Include="../../Discord.net-labs/src/Discord.Net.Webhook/Discord.Net.Webhook.csproj" />
+	</ItemGroup>
+
+</Project>
