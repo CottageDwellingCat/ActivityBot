@@ -20,16 +20,17 @@ Check out this dictionary
 ```cs
 public static Dictionary<int, ulong> ActivityIds = new Dictionary<int, ulong>
 {
-	  { 1, 755827207812677713 }, // Poker Night
-	  { 2, 773336526917861400 }, // Betrayal.io
-	  { 3, 814288819477020702 }, // Fishington.io
-	  { 4, 832012774040141894 }, // Chess in the Park
-	  { 5, 878067389634314250 }, // Doodle Crew
-	  { 6, 879863686565621790 }, // Letter Tile
-	  { 7, 879863976006127627 }, // Word Snacks
-	  { 8, 880218394199220334 }, // Watch Together
+  { 1, 755827207812677713 }, // Poker Night
+  { 2, 773336526917861400 }, // Betrayal.io
+  { 3, 814288819477020702 }, // Fishington.io
+  { 4, 832012774040141894 }, // Chess in the Park
+  { 5, 878067389634314250 }, // Doodle Crew
+  { 6, 879863686565621790 }, // Letter Tile
+  { 7, 879863976006127627 }, // Word Snacks
+  { 8, 880218394199220334 }, // Watch Together
  };
  ```
 ## Random Photos
 ![image](https://user-images.githubusercontent.com/80918250/136310677-136c6db1-df24-49de-93b3-10447942e9e4.png)
 ![image](https://user-images.githubusercontent.com/80918250/136310710-4bcab1f8-aac6-4432-a046-321fc51c7723.png)
+> The windows screenshot tool made blurple plurple for some reason
