@@ -1,5 +1,5 @@
 # Activity Bot
-Activity bot allows you to use experimatal discord features called embeded activities. Embeded activities are games which are played from discord voice calls. you can add the bot to your server [here](https://discord.com/api/oauth2/authorize?client_id=854376669367369758&permissions=1048577&redirect_uri=about%3Ablank&scope=bot%20applications.commands). Currently this bot only works on the desktop version of discord, and is only tested on the latest windows canary. 
+Activity bot allows you to use experimatal discord features called embeded activities. Embeded activities are games which are played from discord voice calls. you can add the bot to your server [here](https://discord.com/api/oauth2/authorize?client_id=895378477052751883&permissions=1048577&redirect_uri=about%3Ablank&scope=bot%20applications.commands). Currently this bot only works on the desktop version of discord, and is only tested on the latest windows canary. 
 ## Permissions
 ### Create Instant Invite
 The trick that allows ActivityBot to launch games requires creating a special type invite to a voice channel, so it needs permission to create invites to work.
