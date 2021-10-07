@@ -116,8 +116,8 @@ namespace ActivityBot
 			}
 		};
 		
-		
 		public static DiscordSocketClient client;
+		
 		static void Main(string[] args)
 			=> Task.Run(async () => await Program.MainAsync()).Wait();
 			
@@ -139,7 +139,7 @@ namespace ActivityBot
 			{
 				if ((await client.Rest.GetGlobalApplicationCommands()).Count == 0)
 				{
-					commands.ForEach(async x => await client.Rest.CreateGlobalCommand(x.Build()));
+					commands.ForEach(async x => _ = await client.Rest.CreateGlobalCommand(x.Build()));
 				}
 			};
 			
@@ -151,12 +151,16 @@ namespace ActivityBot
 				{
 					ulong id = (ulong)ActivityIds.GetValueOrDefault(Convert.ToInt32(args[1].Value));
 					string invite = "discord://discord.gg/" + (await ((SocketVoiceChannel)args[0].Value).CreateInviteToApplicationAsync(applicationId:id, maxAge:null)).Code;
-					var cb = new ComponentBuilder().WithButton("Join Activity", url:invite, style:ButtonStyle.Link);
-					await x.FollowupAsync("Click below to join the activity\nNOTE:activities currently only work on desktop and on the web client", component:cb.Build());
+					var cb = new ComponentBuilder()
+						.WithButton("Join Activity", url:invite, style:ButtonStyle.Link)
+						.WithButton("Get Help", url:"https://github.com/CottageDwellingCat/ActivityBot/blob/main/README.md#trouble-shooting", style:ButtonStyle.Link);
+					_ = await x.FollowupAsync("Click below to join " + ActivityNames.GetValueOrDefault(Convert.ToInt32(args[1].Value), "Unknown Activity"), component:cb.Build());
 				}
 				catch
 				{
-					await x.FollowupAsync("something went wrong, make sure the bot has permission to create invites and try again later.", ephemeral:true);
+					var cb = new ComponentBuilder()
+						.WithButton("Get Help", url:"https://github.com/CottageDwellingCat/ActivityBot/blob/main/README.md#trouble-shooting", style:ButtonStyle.Link);
+					_ = await x.FollowupAsync("Something went wrong, make sure the bot has permission to create invites and connect to the chanel.", ephemeral:true, component:cb.Build());
 				}
 			};
 			
