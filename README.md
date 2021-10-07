@@ -6,9 +6,9 @@ Activity bot allows you to use experimatal discord features called embeded activ
 The trick that allows ActivityBot to launch games requires creating a special type invite to a voice channel, so it needs permission to create invites to work.
 ### Connect
 Discord requires the connect permission to create instant invites in voice channels. 
-## TroubleShooting
+## Trouble Shooting
 ### Commands Not Sending
-Generaly this means the bot crashed and (somne how?????) didn't start itself again, create an issue and I'll have it fixed pretty quick
+Generaly this means the bot crashed and (some how?????) didn't start itself again, create an issue and I'll have it fixed pretty quick
 ### Commands Stuck on "ActivityBot is thinking"
 This can happen when ActivityBot is getting a lot of commands at the same time, when this happens you can wait four or five minuets for things to calm down, then try again.
 ### Clicking the Button does nothing
