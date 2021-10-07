@@ -15,6 +15,10 @@ This can happen when ActivityBot is getting a lot of commands at the same time, 
 This is generaly caused by an incompatable client. Make sure you are using the latest version of the **Desktop or Web** client. If that still doesn't work try using the [canary](https://support.discord.com/hc/en-us/articles/360035675191-Discord-Testing-Clients) client. If nothing happens and you are on windows make sure the regestry value at `Computer\HKEY_CURRENT_USER\Software\Classes\Discord\shell\open\command` is a valid discord client executable (matching the pattern `"C:\Users\Name\AppData\Local\Discord<ptb,canary,nothing>\app-1.0.42\Discord<ptb,canary,nothing>.exe" --url -- "%1"`. If that doesen't fix your problem file a bug report at [dtesters](https://discord.gg/discord-testers) 
 ### Activites loading infinitly
 This is a discord issue, try restarting your client and waiting a few hours.
+### 'Invalid Interaction Application Command' Error
+This is a Discord issue that happens when I update the internal list of activites. Restarting your client should fix the issue, but if it doesen't kicking and readding the bot will reset the guild cache (hopefully) updating everything. In the worst case you will have to wait two hours for the discord datacenter in your region to sync commands.
+### Wrong Activity being launched
+This has the same cuase and sollution as the Invalid Interaction Application Commad Error.
 ## supported games
 Check out this dictionary
 ```cs
