@@ -30,6 +30,7 @@ namespace ActivityBot
 			{ 1, "Poker Night" }, 
 			{ 2, "Betrayal.io" },
 			{ 3, "Fishington.io" },
+			{ 4, "Chess in the Park"},
 			{ 5, "Doodle Crew" },
 			{ 6, "Letter Tile" }, 
 			{ 7, "Word Snacks" },
